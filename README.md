@@ -11,8 +11,8 @@ Free, 24/7 alerts when a seat opens in a UCLA class. It works with your laptop a
   Your email address and passwords are stored as encrypted GitHub secrets, never in this public repo.
 
 ## Install the app
-1. On your Android phone, download **SeatWatch.apk** from this repo's
-   [Releases](../../releases/latest) page and open it. Allow "install unknown apps" for your browser when asked.
+1. On your Android phone, download **[SeatWatch.apk](https://github.com/ericdu847/ucla-seat-watch/raw/main/apk/SeatWatch.apk)**
+   and open it. Allow "install unknown apps" for your browser when asked.
 2. Open **Seat Watch**, tap **Create GitHub token**. Under *Repository access* choose
    *Only select repositories → ucla-seat-watch*. The permissions are already filled in.
    Tap **Generate token**, copy it, paste it into the app, and tap **Connect**.
