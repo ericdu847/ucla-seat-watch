@@ -295,7 +295,8 @@ def main():
                f"Status as of {as_of}:\n\n" + "\n".join(f"• {l}" for l in lines),
                ("Partial: " + "; ".join(lines))[:155], priority="default", click=click)
 
-    if not dry:
+    have_channel = bool(os.getenv("NTFY_TOPIC") or (os.getenv("SMTP_USER") and os.getenv("EMAIL_TO")))
+    if not dry and have_channel:  # don't mark openings as "alerted" before any alert channel exists
         state["found"], state["partial"] = sorted(all_found), sorted(all_partial)
         STATE_PATH.write_text(json.dumps(state, indent=1, sort_keys=True) + "\n")
 
