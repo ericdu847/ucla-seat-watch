@@ -1,0 +1,25 @@
+{
+  "term": "27W",
+  "stop_after": null,
+  "notify_partial": true,
+  "watches": [
+    {
+      "name": "LS 7B",
+      "subj": "LIFESCI",
+      "catlg": "7B",
+      "accept": "open",
+      "enabled": true,
+      "only_primary": null,
+      "exclude_secondary": []
+    },
+    {
+      "name": "BMD RES 5HA",
+      "subj": "BMD RES",
+      "catlg": "5HA",
+      "accept": "open_or_waitlist",
+      "enabled": true,
+      "only_primary": null,
+      "exclude_secondary": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+-keep class org.bouncycastle.crypto.engines.Salsa20Engine { *; }
+-keep class org.bouncycastle.crypto.engines.XSalsa20Engine { *; }
+-keep class org.bouncycastle.crypto.macs.Poly1305 { *; }
+-keep class org.bouncycastle.crypto.digests.Blake2bDigest { *; }
+-keep class org.bouncycastle.math.ec.rfc7748.** { *; }
+-dontwarn org.bouncycastle.**
+-dontwarn javax.naming.**
