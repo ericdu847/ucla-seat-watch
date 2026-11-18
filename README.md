@@ -2,7 +2,7 @@
 
 Free, 24/7 alerts when a seat opens in a UCLA class. It works with your laptop and phone off.
 
-- **Cloud checker** (`watch.py`, GitHub Actions): every ~10 min it reads UCLA's **public** Schedule
+- **Cloud checker** (`watch.py`, GitHub Actions): every ~5 min it reads UCLA's **public** Schedule
   of Classes (no MyUCLA login, no Duo) and detects newly enrollable sections. For classes with labs
   or discussions, that means a lecture **and** one of its sections both have space.
 - **Android app** (`android/`): pick which classes to watch, set your alert email, and get the
@@ -32,7 +32,7 @@ Free, 24/7 alerts when a seat opens in a UCLA class. It works with your laptop a
 ## Limits
 - UCLA's public seat counts update **about once an hour**. Treat an alert as "go to MyUCLA now",
   not as a guaranteed seat. Classes with no waitlist go first-come.
-- GitHub may run the 10-min schedule a few minutes late. GitHub also pauses scheduled workflows in
+- GitHub may run the 5-min schedule a few minutes late. GitHub also pauses scheduled workflows in
   repos with no commits for 60 days. Editing classes in the app, or any alert, counts as activity.
 - If UCLA changes its page or blocks GitHub, the checker sends a **"watcher is failing"** alert
   after 3 failed runs in a row.

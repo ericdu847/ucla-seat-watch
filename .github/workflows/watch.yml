@@ -2,7 +2,7 @@ name: ucla-seat-watch
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # every 10 min (GitHub may delay runs a few minutes under load)
+    - cron: "*/5 * * * *"    # every 5 min, GitHub's minimum (runs can be a few minutes late under load)
   workflow_dispatch:          # the app's "Send test alert" button, or the Run workflow button
     inputs:
       mode:
