@@ -1,6 +1,8 @@
 {
  "fail_alerted": false,
  "fails": 0,
- "found": [],
+ "found": [
+  "BMD RES 5HA|Lec 1|waitlist"
+ ],
  "partial": []
 }
